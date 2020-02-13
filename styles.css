@@ -105,7 +105,8 @@ body {
   font-weight: bold;
 }
 
-.nav__link--active {
+.nav__link--active,
+.nav__link:active {
   color: var(--color__header-active);
 }
 
