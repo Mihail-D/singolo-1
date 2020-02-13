@@ -149,6 +149,58 @@ body {
   transform: rotate(180deg);
 }
 
+.image {
+  --color__image-border: #c6c6c6;
+
+  display: flex;
+  width: 798px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 28px;
+}
+
+.image img {
+  padding: 0;
+  margin: 0;
+}
+
+.image__phone--horizont {
+  transform: rotate(90deg) translate(-1px,148px);
+}
+
+.image__phone--blue .image__screen {
+  background-image: url("./assets/images/phone__screen_blue.jpg");
+}
+
+.image__phone-wrapper {
+  position: relative;
+  width: 215px;
+  height: 458px;
+}
+
+.image__screen {
+  /* box-sizing: border-box; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50%),calc(-50% + 2px));
+  width: 188px;
+  height: 333px;
+  border: 3px solid var(--color__image-border);
+  border-radius: 4px;
+  background-image: url("./assets/images/phone__screen_yellow.jpg");
+  background-repeat: no-repeat;
+}
+
+/* .image__shadow {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  height: 483px;
+  width: 240px;
+  background-image: url(./assets/images/phone-shadow.png);
+} */
 
 
 
