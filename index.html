@@ -7,72 +7,67 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="layout">
-    <header class="layout__header">
-      <div class="layout__container">
-        <div class="header">
-          <div class="header__logo-wrapper">
-            <a href="#home" class="header__logo" type="submit">SINGOLO<span>*</span></a>
-          </div>
-          <nav class="nav">
-            <li class="nav__item"><a href="#home" class="nav__link nav__link--active">Home</a></li>
-            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-            <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-          </nav>
+<body  class="layout">
+  <header class="layout__header">
+    <div class="layout__container">
+      <div class="header">
+        <div class="header__logo-wrapper">
+          <a href="#home" class="header__logo" type="submit">SINGOLO<span>*</span></a>
         </div>
+        <nav class="header__nav">
+          <ul class="navigation">
+            <li class="navigation__item"><a href="#home" class="navigation__link navigation__link--active">Home</a></li>
+            <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+            <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+            <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
-  
-    <main class="layout__main">
-      <div class="layout__container">
-        <section id="home" class="slider">
-          <button class="slider__button" value="left">
-            <svg class="slider__button-icon" aria-hidden="true">
-              <use xlink:href="#icon__slider-arrow" href="#icon__slider-arrow" />
-            </svg>
-          </button>
-          <div class="slider__images">
-            
-            <div class="image">
-              <div class="image__phone image__phone--vert image__phone--yellow">
-                <div class="image__phone-wrapper">
-                  <div class="image__shadow"></div>
-                  <img src="./assets/images/phone.png" alt="phone">
-                  <div class="image__screen"></div>
-                </div>
-              </div>
+    </div>
+  </header>
 
-              <div class="image__phone image__phone--horizont image__phone--blue">
-                <div class="image__phone-wrapper">
-                  <div class="image__shadow"></div>
-                  <img src="./assets/images/phone.png" alt="phone">
-                  <div class="image__screen"></div>
-                </div>
-                
-              </div>
-
+  <main class="layout__main">
+    <div class="layout__container">
+      <section id="home" class="slider">
+        <button class="slider__button" value="left">
+          <svg class="slider__button-icon" aria-hidden="true">
+            <use xlink:href="#icon__slider-arrow" href="#icon__slider-arrow" />
+          </svg>
+        </button>
+        <div class="slider__images">
           
+          <div class="image">
+            <div class="image__phone image__phone--vert image__phone--yellow">
+              <div class="image__shadow"></div>
+              <div class="image__phone-wrapper">
+                <img src="./assets/images/phone.png" alt="phone">
+                <div class="image__screen"></div>
+              </div>
             </div>
-
+            <div class="image__phone image__phone--horizont image__phone--blue">
+              <div class="image__shadow image__shadow--horizont"></div>
+              <div class="image__phone-wrapper">
+                <img src="./assets/images/phone.png" alt="phone">
+                <div class="image__screen"></div>
+              </div>
+              
+            </div>
+        
           </div>
-          <button class="slider__button" value="right">
-            <svg class="slider__button-icon slider__button-icon--right" aria-hidden="true">
-              <use xlink:href="#icon__slider-arrow" href="#icon__slider-arrow" />
-            </svg>
-          </button>
-        </section>
-      </div>
-    </main>
-
-    <footer class="layout__footer">
-      <div class="layout__container">
-
-      </div>
-    </footer>
-  </div>
+        </div>
+        <button class="slider__button" value="right">
+          <svg class="slider__button-icon slider__button-icon--right" aria-hidden="true">
+            <use xlink:href="#icon__slider-arrow" href="#icon__slider-arrow" />
+          </svg>
+        </button>
+      </section>
+    </div>
+  </main>
+  <footer class="layout__footer">
+    <div class="layout__container">
+    </div>
+  </footer>
 </body>
 </html>
 
