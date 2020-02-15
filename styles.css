@@ -3,10 +3,12 @@
 }
 
 body {
+  --color__active: #f06c64;
+
   width: 100%;
 }
 
-.icon {
+.svg__icon {
   display: hiden;
 }
 
@@ -211,4 +213,130 @@ body {
 }
 
 
+.services {
+  --color__services-primary: #666d89;
+  --color__services-secondary: #767e9e;
+
+  padding: 59px 40px 74px 40px;
+  background-color: #f2f2f2;
+}
+
+.services__header {
+  margin-bottom: 48px;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 30px;
+  height: 23px;
+  font-size: 31px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.6px;
+  text-align: justify;
+  color: var(--color__services-primary);
+}
+
+.services__description {
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: justify;
+  color: var(--color__services-secondary);
+}
+
+.services__column-layout {
+  display: grid;
+  grid-row-gap: 44px;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(299px, 1fr));
+}
+
+.rich-icon {
+  position: relative;
+  width: 299px;
+  padding-left: 79px;
+  box-sizing: border-box;
+}
+
+.rich-icon__title {
+  margin: 0;
+  height: 17px;
+  font-size: 19px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: justify;
+  letter-spacing: -0.5px;
+  color: var(--color__services-primary);
+  padding-bottom: 10px;
+}
+
+.rich-icon__description {
+  margin: 0;
+  height: 52px;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: justify;
+  color: var(--color__services-secondary);
+}
+
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: solid 2px var(--color__services-primary);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 2s;
+}
+
+.icon:hover {
+  border: solid 2px var(--color__active);
+}
+
+.icon--pen {
+  background-image: url(./assets/images/pen.svg);
+  background-size: 32px 32px;
+}
+
+.icon--bulb {
+  background-image: url(./assets/images/bulb.svg);
+  background-size: 22px 32px;
+}
+
+.icon--heart {
+  background-image: url(./assets/images/heart.svg);
+  background-size: 32px 28px;
+}
+
+.icon--phone {
+  background-image: url(./assets/images/phone.svg);
+  background-size: 22px 32px;
+}
+
+.icon--bubble {
+  background-image: url(./assets/images/bubble.svg);
+  background-size: 32px 28px;
+}
+
+.icon--star {
+  background-image: url(./assets/images/star.svg);
+  background-size: 32px 31px;
+}
 
