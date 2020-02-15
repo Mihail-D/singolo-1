@@ -6,6 +6,7 @@ body {
   --color__active: #f06c64;
 
   width: 100%;
+  background-color: blue;
 }
 
 .svg__icon {
@@ -216,9 +217,12 @@ body {
 .services {
   --color__services-primary: #666d89;
   --color__services-secondary: #767e9e;
+  --color__services-border: white;
 
-  padding: 59px 40px 74px 40px;
+  padding: 59px 40px 72px 40px;
   background-color: #f2f2f2;
+  border-bottom: 6px solid red;
+  box-sizing: border-box;
 }
 
 .services__header {
