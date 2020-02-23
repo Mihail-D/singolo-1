@@ -239,7 +239,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(calc(-50%),calc(-50% + 2px));
-  transition: background-image .5s ease;
+  transition: background-image 0.5s ease;
   border: 3px solid var(--color__image-border);
   border-radius: 4px;
   background-image: url("./assets/images/phone__screen_yellow.jpg");
@@ -387,8 +387,21 @@ body {
     height: calc(100vw * 0.45);
   }
 
+  .image__shadow {
+    width: calc(24vw);
+    height: calc(47.5vw);
+  }
+
   .image__shadow--horizont {
-    transform: scale(1, -1) translate(0, 11.2%);
+    transform: scale(1, -1) translate(0, 5.2%);
+  }
+
+  .image__screen {
+    top: 13%;
+    left: 4%;
+    width: calc(18.8vw);
+    height: calc(33.2vw);
+    transform: none;
   }
 }
 
