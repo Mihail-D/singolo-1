@@ -119,9 +119,9 @@ body {
   transition-delay: 0.3s;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.22px;
   color: var(--color__header-type);
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -313,13 +313,13 @@ body {
   transition: color 1s ease;
   margin: 0;
   height: 17px;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.7;
+  line-height: 0.8;
   text-align: justify;
-  letter-spacing: -0.55px;
+  letter-spacing: -0.1px;
   color: var(--color__services-primary);
   padding-bottom: 9px;
 }
