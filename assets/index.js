@@ -54,7 +54,7 @@ const navigateSetActivity = () => {
 }
 
 
-const sliderGenerator = () => {
+const sliderStart = () => {
   const slider = document.querySelector('.slider'),
         imageSection = slider.querySelectorAll('.image__phone'),
         classColorScreen = ['image__phone--yellow', 'image__phone--blue'];
@@ -84,5 +84,5 @@ const sliderGenerator = () => {
 
 ready(() => { 
   navigateSetActivity();
-  sliderGenerator();
+  sliderStart();
 })
