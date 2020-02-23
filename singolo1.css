@@ -301,7 +301,12 @@ body {
   box-sizing: border-box;
 }
 
+.rich-icon:hover .rich-icon__title {
+  color: var(--color__active);
+}
+
 .rich-icon__title {
+  transition: color 1s ease;
   margin: 0;
   height: 17px;
   font-size: 19px;
