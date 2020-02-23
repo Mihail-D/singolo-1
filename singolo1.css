@@ -5,6 +5,7 @@
 body {
   --color__active: #f06c64;
 
+  margin: 0;
   width: 100%;
 }
 
@@ -27,6 +28,9 @@ body {
   --color__header-type: white;
 
   display: flex;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
   justify-content: center;
   width: 100%;
 }
@@ -43,6 +47,7 @@ body {
 }
 
 .layout__main {
+  padding-top: 95px;
   display: flex;
   justify-content: center;
   width: 100%;

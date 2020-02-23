@@ -4,7 +4,8 @@ const ready = (callback) => {
   }
 
 const navigateSetActivity = () => {
-  const navigationBlock = document.querySelector('.navigation'),
+  const header = document.querySelector('.header'),
+        navigationBlock = header.querySelector('.navigation')
         navigationItemsList = navigationBlock.querySelectorAll('.navigation__link');
 
   const clearActivity = () => {
@@ -13,13 +14,42 @@ const navigateSetActivity = () => {
     })
   };
 
-  navigationBlock.addEventListener('click', (event) => {
+  const slowMotion = (section) => {
+    if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+  }
+  
+  header.addEventListener('click', (event) => {
     const target = event.target;
 
     if (target.classList.contains('navigation__link')) {
+      event.preventDefault();
+      const blockId = target.getAttribute('href').substr(1)
+
+      if (target.classList.contains('navigation__link')) {
+        clearActivity();
+        target.classList.add('navigation__link--active');
+      }
+
+      const targetSection = document.getElementById(blockId);
+      slowMotion(targetSection);
+      
+    } else if (target.classList.contains('header__logo')) {
+      event.preventDefault();
+      const blockId = target.getAttribute('href').substr(1)
+
       clearActivity();
-      target.classList.add('navigation__link--active');
+      const navigateHomeLink = navigationBlock.querySelector('a[href="#home"]');
+      navigateHomeLink.classList.add('navigation__link--active');
+
+      const targetSection = document.getElementById(blockId);
+      slowMotion(targetSection);
     }
+
   });
 }
 
