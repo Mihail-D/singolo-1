@@ -274,8 +274,8 @@ body {
 
 .services__column-layout {
   display: grid;
-  grid-row-gap: 44px;
-  grid-column-gap: 22px;
+  grid-row-gap: 45px;
+  grid-column-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
 }
 
@@ -293,8 +293,7 @@ body {
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.8;
-  letter-spacing: normal;
+  line-height: 0.7;
   text-align: justify;
   letter-spacing: -0.55px;
   color: var(--color__services-primary);
@@ -304,16 +303,15 @@ body {
 .rich-icon__description {
   margin: 0;
   height: 52px;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  text-align: justify;
   line-height: 1.835;
   letter-spacing: normal;
-  text-align: justify;
   color: var(--color__services-secondary);
+  font-size: 12px;
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 .icon {
   position: absolute;
@@ -357,4 +355,3 @@ body {
   background-image: url(./assets/images/star.svg);
   background-size: 32px 31px;
 }
-
