@@ -115,7 +115,7 @@ body {
 }
 
 .navigation__link {
-  transition: color .7s;
+  transition: color .7s ease;
   transition-delay: 0.3s;
   text-transform: uppercase;
   text-decoration: none;
@@ -147,6 +147,17 @@ body {
   height: 600px;
 }
 
+.slider__title {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+
 .slider__button {
   outline: none;
   border: none;
@@ -156,13 +167,17 @@ body {
 }
 
 .slider__button:active .slider__button-icon  {
-  --icon--slider-arrow: white;
+  background-image: url(./assets/images/arrow--pressed.svg);
+}
+
+.slider__button:hover .slider__button-icon {
+  opacity: 0.7;
 }
 
 .slider__button-icon {
-  --icon--slider-arrow: #ca4549;
-
+  display: inline-block;
   margin: 0 auto;
+  background-image: url(./assets/images/arrow.svg);
   width: 27px;
   height: 27px;
 }
@@ -220,7 +235,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(calc(-50%),calc(-50% + 2px));
-  transition: background-image .5s;
+  transition: background-image .5s ease;
   border: 3px solid var(--color__image-border);
   border-radius: 4px;
   background-image: url("./assets/images/phone__screen_yellow.jpg");

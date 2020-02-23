@@ -16,7 +16,7 @@
     <div class="layout__container">
       <div class="header">
         <div class="header__logo-wrapper">
-          <a href="#home" class="header__logo" type="submit">SINGOLO<span>*</span></a>
+          <a href="#home" class="header__logo">SINGOLO<span>*</span></a>
         </div>
         <nav class="header__nav">
           <!-- Navagation block -->
@@ -38,10 +38,9 @@
 
       <!-- Slider section -->
       <section class="slider">
+        <h2 class="slider__title">Slider</h2>
         <button class="slider__button" value="left">
-          <svg class="slider__button-icon" aria-hidden="true">
-            <use xlink:href="#icon__slider-arrow" href="#icon__slider-arrow" />
-          </svg>
+          <i class="slider__button-icon" style="width: 27px; height: 27px;"></i>
         </button>
         
         <div class="slider__images">
@@ -65,9 +64,7 @@
         </div>
 
         <button class="slider__button" value="right">
-          <svg class="slider__button-icon slider__button-icon--right" aria-hidden="true">
-            <use xlink:href="#icon__slider-arrow" href="#icon__slider-arrow" />
-          </svg>
+          <i class="slider__button-icon slider__button-icon--right"></i>
         </button>
       </section>
 
@@ -87,7 +84,7 @@
           <div class="rich-icon">
             <i class="icon icon--bulb"></i>
             <h3 class="rich-icon__title">Inovative Ideas</h3>
-            <p class="rich-icon__description">Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+            <p class="rich-icon__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
           </div>
 
           <div class="rich-icon">
@@ -99,13 +96,13 @@
           <div class="rich-icon">
             <i class="icon icon--phone"></i>
             <h3 class="rich-icon__title">Responsive Layout</h3>
-            <p class="rich-icon__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae&shy;sent elit leo.</p>
+            <p class="rich-icon__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
           </div>
 
           <div class="rich-icon">
             <i class="icon icon--bubble"></i>
             <h3 class="rich-icon__title">24 / 7 Support</h3>
-            <p class="rich-icon__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .</p>
+            <p class="rich-icon__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
           </div>
 
           <div class="rich-icon">
@@ -124,13 +121,6 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="./assets/index.js"></script>
+  <script src="./assets/index.js"></script>
 </body>
 </html>
-
-<!-- Icons -->
-<svg class="svg__icon" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="icon__slider-arrow" viewBox="0 0 492 492">
-    <path  fill="var(--icon--slider-arrow)" d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12 C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084 c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864 l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"/>
-  </symbol>
-</svg>
