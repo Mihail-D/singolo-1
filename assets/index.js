@@ -31,8 +31,14 @@ const sliderGenerator = () => {
   
   const createNewPhons = () => {
     [...imageSection].forEach(element => {
-      element.classList.remove('image__phone--yellow', 'image__phone--blue');
-      element.classList.add(classColorScreen[Math.floor(Math.random() * 2)]);
+      if (element.classList.contains('image__phone--blue')) {
+        element.classList.remove('image__phone--blue');
+        element.classList.add('image__phone--yellow');
+      } else {
+        element.classList.remove('image__phone--yellow');
+        element.classList.add('image__phone--blue');
+      }
+      
     })
   };
   
