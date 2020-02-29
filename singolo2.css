@@ -31,4 +31,59 @@ body {
   max-width: 1020px;
 }
 
+.portfolio {
+  --color__portfolio-background: #2d303a;
+  --color__portfolio-border: #323746;
+  --color__portfolio-primary: #666d89;
+  --color__portfolio-secondary: #767e9e;
+  --color__portfolio-active: white;
+  --size__portfolio-title: 1.875rem;
+  --size__portfolio-description: 1.125rem;
+  --size__portfolio-tag: 0.75rem;
+  box-sizing: border-box;
+  padding: 68px 40px 67px 40px;
+  border-bottom: 6px solid var(--color__portfolio-border);
+  background-color: var(--color__portfolio-background);
+  width: 100%;
+}
+.portfolio__title {
+  margin: 0;
+  margin-bottom: 30px;
+  height: 23px;
+  font-size: var(--size__portfolio-title);
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.1px;
+  text-align: justify;
+  color: var(--color__portfolio-primary);
+}
+.portfolio__description {
+  margin: 0;
+  padding-bottom: 11px;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: justify;
+  color: var(--color__portfolio-secondary);
+}
+.portfolio__tag {
+  border: 1px solid var(--color__portfolio-primary);
+  border-radius: 5px;
+  box-shadow: none;
+  background: none;
+  padding: 3px 6px;
+  color: var(--color__portfolio-secondary);
+  font-size: var(--size__portfolio-tag);
+}
+.portfolio__images-wrapper {
+  display: grid;
+  padding-top: 19px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
 /*# sourceMappingURL=singolo2.css.map */
