@@ -75,12 +75,16 @@ body {
   box-shadow: none;
   background: none;
   cursor: pointer;
-  padding: 1px 7px 4px;
+  padding: 2px 7px 3px;
   color: var(--color__portfolio-secondary);
   font-size: var(--size__portfolio-tag);
+  transition: all 0.7s ease;
 }
 .portfolio__tag:last-of-type {
   margin: 0;
+}
+.portfolio__tag:hover {
+  opacity: 0.75;
 }
 .portfolio__tag--active {
   border-color: var(--color__portfolio-active-border);
