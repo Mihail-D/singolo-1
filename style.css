@@ -796,6 +796,7 @@ body {
 .footer__copyright {
   color: var(--color__footer-primary);
   margin: 0;
+  font-weight: normal;
   font-size: 12px;
 }
 .footer__social-wrapper {
