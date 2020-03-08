@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singolo</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="singolo1.css">
+</head>
+
+<body  class="layout">
+
+  <!-- Header section -->
+  <header class="layout__header">
+    <h1 class="layout__title">Singolo</h1>
+    <div class="layout__container">
+      <div class="header">
+        <div class="header__logo-wrapper">
+          <a href="#home" class="header__logo">SINGOLO<span>*</span></a>
+        </div>
+        <nav class="header__nav">
+          <!-- Navagation block -->
+          <ul class="navigation">
+            <li class="navigation__item"><a href="#home" class="navigation__link navigation__link--active">Home</a></li>
+            <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+            <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+            <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main block -->
+  <main id="home" class="layout__main">
+    <div class="layout__container">
+
+      <!-- Slider section -->
+      <section class="slider">
+        <h2 class="slider__title">Slider</h2>
+        <button class="slider__button" value="left">
+          <i class="slider__button-icon" style="width: 27px; height: 27px;"></i>
+        </button>
+        
+        <div class="slider__images">
+          <!-- Images for slider -->
+          <div class="image">
+            <div class="image__phone image__phone--vert image__phone--yellow">
+              <div class="image__shadow"></div>
+              <div class="image__phone-wrapper">
+                <img src="./assets/images/phone.png" alt="phone">
+                <div class="image__screen"></div>
+              </div>
+            </div>
+            <div class="image__phone image__phone--horizont image__phone--blue">
+              <div class="image__shadow image__shadow--horizont"></div>
+              <div class="image__phone-wrapper">
+                <img src="./assets/images/phone.png" alt="phone">
+                <div class="image__screen"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider__button" value="right">
+          <i class="slider__button-icon slider__button-icon--right"></i>
+        </button>
+      </section>
+
+      <!-- Services section -->
+      <section id="services" class="services">
+        <header class="services__header">
+          <h2 class="services__title">Our Services</h2>
+          <p class="services__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </header>
+        <div class="services__column-layout">
+          <div class="rich-icon">
+            <i class="icon icon--pen"></i>
+            <h3 class="rich-icon__title">Custom Design</h3>
+            <p class="rich-icon__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+          </div>
+
+          <div class="rich-icon">
+            <i class="icon icon--bulb"></i>
+            <h3 class="rich-icon__title">Inovative Ideas</h3>
+            <p class="rich-icon__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+          </div>
+
+          <div class="rich-icon">
+            <i class="icon icon--heart"></i>
+            <h3 class="rich-icon__title">Love Is The Answer</h3>
+            <p class="rich-icon__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+          </div>
+
+          <div class="rich-icon">
+            <i class="icon icon--phone"></i>
+            <h3 class="rich-icon__title">Responsive Layout</h3>
+            <p class="rich-icon__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+          </div>
+
+          <div class="rich-icon">
+            <i class="icon icon--bubble"></i>
+            <h3 class="rich-icon__title">24 / 7 Support</h3>
+            <p class="rich-icon__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+          </div>
+
+          <div class="rich-icon">
+            <i class="icon icon--star"></i>
+            <h3 class="rich-icon__title">Feel Like A Star</h3>
+            <p class="rich-icon__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+      <section class="portfolio">
+        <header class="portfolio__header">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <p class="portfolio__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </header>
+        <div class="portfolio__tags-wrapper">
+          <button class="portfolio__tag portfolio__tag--active" value="All">All</button>
+          <button class="portfolio__tag" value="Web Design">Web Design</button>
+          <button class="portfolio__tag" value="Graphic Design">Graphic Design</button>
+          <button class="portfolio__tag" value="Artwork">Artwork</button>
+        </div>
+        <div class="portfolio__images-wrapper"><img src="./assets/images/portfolio/portfolio__img1.jpg" alt="image1"><img src="./assets/images/portfolio/portfolio__img2.jpg" alt="image2"><img src="./assets/images/portfolio/portfolio__img3.jpg" alt="image3"><img src="./assets/images/portfolio/portfolio__img4.jpg" alt="image4"><img src="./assets/images/portfolio/portfolio__img5.jpg" alt="image5"><img src="./assets/images/portfolio/portfolio__img6.jpg" alt="image6"><img src="./assets/images/portfolio/portfolio__img7.jpg" alt="image7"><img src="./assets/images/portfolio/portfolio__img8.jpg" alt="image8"><img src="./assets/images/portfolio/portfolio__img9.jpg" alt="image9"><img src="./assets/images/portfolio/portfolio__img10.jpg" alt="image10"><img src="./assets/images/portfolio/portfolio__img11.jpg" alt="image11"><img src="./assets/images/portfolio/portfolio__img12.jpg" alt="image12">
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about">
+        <header class="about__header">
+          <h2 class="about__title">About Us</h2>
+          <p class="about__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </header>
+        <div class="about__persons-wrapper">
+              <div class="person"><img src="./assets/images/about/adam_jensen.jpg" alt="Adam Jensen">
+                <h3 class="person__title">Adam Jensen</h3>
+                <p class="person__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                <div class="person__social-wrapper"><a class="person__social-link person__social-link--facebook" href="www.facebook.com"></a><a class="person__social-link person__social-link--google" href="www.google.com"></a><a class="person__social-link person__social-link--twitter" href="www.twitter.com"></a><a class="person__social-link person__social-link--linkedin" href="www.linkedin.com"></a></div>
+              </div>
+              <div class="person"><img src="./assets/images/about/desmond_miles.jpg" alt="Antoine Marie Jean-Baptiste Roger vicomte de Saint-Exupéry">
+                <h3 class="person__title">Antoine Marie Jean-Baptiste Roger vicomte de Saint-Exupéry</h3>
+                <p class="person__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                <div class="person__social-wrapper"><a class="person__social-link person__social-link--facebook" href="www.facebook.com"></a><a class="person__social-link person__social-link--google" href="www.google.com"></a><a class="person__social-link person__social-link--twitter" href="www.twitter.com"></a><a class="person__social-link person__social-link--linkedin" href="www.linkedin.com"></a></div>
+              </div>
+              <div class="person"><img src="./assets/images/about/scolara_visari.jpg" alt="Scolara Visari">
+                <h3 class="person__title">Scolara Visari</h3>
+                <p class="person__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                <div class="person__social-wrapper"><a class="person__social-link person__social-link--facebook" href="www.facebook.com"></a><a class="person__social-link person__social-link--google" href="www.google.com"></a><a class="person__social-link person__social-link--twitter" href="www.twitter.com"></a><a class="person__social-link person__social-link--linkedin" href="www.linkedin.com"></a></div>
+              </div>
+        </div>
+      </section>
+
+      <!-- Get quote section -->
+      <section class="get-quote">
+        <header class="get-quote__header">
+          <h2 class="get-quote__title">Get a Quote</h2>
+          <p class="get-quote__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </header>
+        <div class="get-quote__content-wrapper">
+          <form class="get-quote__form" method="POST" action="">
+            <div class="get-quote__input-wrapper">
+              <input class="get-quote__input" type="text" required name="name" placeholder="Name(Required)">
+            </div>
+            <div class="get-quote__input-wrapper">
+              <input class="get-quote__input" type="email" required name="email" placeholder="Email(Required)">
+            </div>
+            <div class="get-quote__input-wrapper">
+              <input class="get-quote__input" type="text" name="subject" placeholder="Subject">
+            </div>
+            <textarea class="get-quote__message" name="message" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            <button class="get-quote__submit" type="submit">Submit</button>
+          </form>
+          <div class="get-quote__information-wrapper">
+            <h3 class="get-quote__title-information">Contact Information</h3>
+            <p class="get-quote__describe-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto voluptates facilis incidunt. Impedit nobis quas at provident esse a fugit, pariatur ad dolorum similique maxime veritatis, tempore corporisZ!</p>
+            <div class="get-quote__contact">
+              <div class="get-quote__contact-wrapper"><a class="get-quote__contact-line get-quote__contact-line--address" href="https://www.google.ru/maps/place/Lost+City+Dr,+Lost+City,+WV,+США/@38.9307786,-78.836105,17z/data=!3m1!4b1!4m5!3m4!1s0x89b5054a163c09f3:0x19d201dfc4e31434!8m2!3d38.9306183!4d-78.8335748">Elm St.14/05 Lost City</a></div>
+              <div class="get-quote__contact-wrapper"><a class="get-quote__contact-line get-quote__contact-line--phone" href="tel:+035283318635">03528 331 86 35</a></div>
+              <div class="get-quote__contact-wrapper"><a class="get-quote__contact-line get-quote__contact-line--mail" href="mailto:info@singolo.com">info@singolo.com</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer class="layout__footer">
+    <div class="layout__container">
+      <section class="footer">
+        <p class="footer__copyright">© Copyright 2013</p>
+        <div class="footer__social-wrapper"><a class="footer__social-link footer__social-link--facebook"></a><a class="footer__social-link footer__social-link--google"></a><a class="footer__social-link footer__social-link--twitter"></a><a class="footer__social-link footer__social-link--linkedin"></a></div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="./assets/index.js"></script>
+</body>
+</html>
