@@ -3,7 +3,7 @@ const ready = (callback) => {
     else document.addEventListener("DOMContentLoaded", callback);
   }
 
-const navigateSetActivity = () => {
+const intiNavigateSet = () => {
   const header = document.querySelector('.header'),
         navigationBlock = header.querySelector('.navigation')
         navigationItemsList = navigationBlock.querySelectorAll('.navigation__link');
@@ -54,7 +54,7 @@ const navigateSetActivity = () => {
 }
 
 
-const sliderStart = () => {
+const startSlider = () => {
   const slider = document.querySelector('.slider'),
         imageSection = slider.querySelectorAll('.image__phone'),
         classColorScreen = ['image__phone--yellow', 'image__phone--blue'];
@@ -81,7 +81,7 @@ const sliderStart = () => {
   });
 }
 
-const tagActiveSet = () => {
+const initTagFilter = () => {
   const tagsFromPortfolio = document.querySelectorAll('.portfolio__tag'),
         tagsWrapper = document.querySelector('.portfolio__tags-wrapper');
 
@@ -99,8 +99,35 @@ const tagActiveSet = () => {
 }
 
 
+
+const initSendForm = () => {
+  const formSingolo = document.querySelector('.get-quote__form');
+  const sendForm = new FormData(formSingolo);
+
+  formSingolo.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const sendForm = new FormData(formSingolo);
+
+    console.log(sendForm);
+
+    fetch('https://cors-anywhere.herokuapp.com/http://singolo.lokalin.ru/mail.php', {
+      method: 'POST',
+      headers: {
+    	  'Content-Type': 'multipart/form-data',
+      },
+      body: sendForm
+    })
+      .then(response => response.json())
+      .then(json => {
+        console.log(json);
+      })
+  });
+}
+
+
 ready(() => { 
-  navigateSetActivity();
-  sliderStart();
-  tagActiveSet();
+  intiNavigateSet();
+  startSlider();
+  initTagFilter();
+  initSendForm();
 })
