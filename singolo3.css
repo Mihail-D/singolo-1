@@ -211,16 +211,14 @@ body {
   opacity: 0.25;
 }
 .footer__social-link--facebook {
-  background-image: url(./assets/images/facebook.svg);
+  background-image: url(./assets/images/icons/icon-facebook.svg);
 }
 .footer__social-link--google {
-  background-image: url(./assets/images/google-plus.svg);
+  background-image: url(./assets/images/icons/icon-google-plus.svg);
 }
 .footer__social-link--twitter {
-  background-image: url(./assets/images/twitter.svg);
+  background-image: url(./assets/images/icons/icon-twitter.svg);
 }
 .footer__social-link--linkedin {
-  background-image: url(./assets/images/linkedin.svg);
+  background-image: url(./assets/images/icons/icon-linkedin.svg);
 }
-
-/*# sourceMappingURL=singolo3.css.map */
