@@ -9,3 +9,7 @@
 ![Website](https://img.shields.io/website?up_message=Singolo2_online&url=https://ILokalin.github.io/singolo/singolo2.html)
 
 [Demo: https://ILokalin.github.io/singolo/singolo2.html](https://ILokalin.github.io/singolo/singolo2.html)
+
+![Website](https://img.shields.io/website?up_message=Singolo3_online&url=https://ILokalin.github.io/singolo/singolo3.html)
+
+[Demo: https://ILokalin.github.io/singolo/singolo3.html](https://ilokalin.github.io/singolo/singolo3.html)
