@@ -1,0 +1,169 @@
+* {
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+body {
+  --color__active: #f06c64;
+  margin: 0;
+  width: 100%;
+}
+
+.icon__path {
+  fill: white;
+}
+
+.layout {
+  width: 100%;
+}
+
+.layout__main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.layout__container {
+  flex-basis: 1020px;
+  max-width: 1020px;
+}
+
+.get-quote {
+  --color__get-qoute-background: #f06c64;
+  --color__get-qoute-border: #ea676b;
+  --color__get-qoute-form-background: #d6564f;
+  --color__get-qoute-placeholder: #f48c8f;
+  --color__get-qoute-title-color: #f0d8d9;
+  --color__get-qoute-button: #f0d8d9df;
+  --color__get-qoute-button--hover: #f0d8d950;
+  box-sizing: border-box;
+  border-bottom: 6px solid var(--color__get-qoute-border);
+  background-color: var(--color__get-qoute-background);
+  padding: 50px 40px 64px;
+  width: 100%;
+}
+.get-quote__title {
+  margin: 0;
+  line-height: 54px;
+  color: var(--color__get-qoute-title-color);
+  font-size: 30px;
+}
+.get-quote__description {
+  margin: 0;
+  padding-top: 11px;
+  line-height: 29px;
+  color: var(--color__get-qoute-title-color);
+  font-size: 18px;
+}
+.get-quote__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 44px;
+}
+.get-quote__form {
+  position: relative;
+}
+.get-quote__input-wrapper {
+  padding-bottom: 16px;
+}
+.get-quote__input {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color__get-qoute-form-background);
+  padding-left: 15px;
+  width: 619px;
+  height: 38px;
+  color: var(--color__get-qoute-placeholder);
+  font-size: 12px;
+}
+.get-quote__input::placeholder {
+  color: var(--color__get-qoute-placeholder);
+}
+.get-quote__message {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color__get-qoute-form-background);
+  padding-top: 10px;
+  padding-left: 15px;
+  width: 619px;
+  height: 202px;
+  resize: none;
+  font-size: 12px;
+}
+.get-quote__message::placeholder {
+  color: var(--color__get-qoute-placeholder);
+}
+.get-quote__submit {
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  color: var(--color__get-qoute-title-color);
+  border: 1px solid var(--color__get-qoute-button);
+  border-radius: 3px;
+  background-color: var(--color__get-qoute-background);
+  cursor: pointer;
+  width: 120px;
+  user-select: none;
+  height: 38px;
+  outline: none;
+}
+.get-quote__submit:hover {
+  border: 1px solid var(--color__get-qoute-button--hover);
+}
+.get-quote__submit:active {
+  background-color: var(--color__get-qoute-form-background);
+  border: 1px solid var(--color__get-qoute-button--hover);
+}
+.get-quote__information-wrapper {
+  width: 300px;
+}
+.get-quote__title-information {
+  margin: 0;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+  color: var(--color__get-qoute-title-color);
+}
+.get-quote__describe-information {
+  margin: 0;
+  padding-top: 10px;
+  line-height: 22px;
+  color: var(--color__get-qoute-title-color);
+  font-size: 12px;
+}
+.get-quote__contact {
+  padding-top: 1px;
+}
+.get-quote__contact-line {
+  margin-bottom: 3px;
+  padding-left: 23px;
+  line-height: 18px;
+  color: var(--color__get-qoute-title-color);
+  font-size: 12px;
+  position: relative;
+  text-decoration: none;
+}
+.get-quote__contact-line::before {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: "";
+  width: 14px;
+  background-position: center;
+  height: 14px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.get-quote__contact-line--address::before {
+  background-image: url("./assets/images/icon-location.png");
+}
+.get-quote__contact-line--phone::before {
+  background-image: url("./assets/images/icon-phone.png");
+}
+.get-quote__contact-line--mail::before {
+  background-image: url("./assets/images/icon-mail.png");
+}
+
+/*# sourceMappingURL=singolo3.css.map */
