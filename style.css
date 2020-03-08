@@ -166,7 +166,7 @@ body {
 }
 
 .slider__button:active .slider__button-icon  {
-  background-image: url(./assets/images/arrow--pressed.svg);
+  background-image: url(./assets/images/icons/icon-arrow--pressed.svg);
 }
 
 .slider__button:hover .slider__button-icon {
@@ -176,7 +176,7 @@ body {
 .slider__button-icon {
   display: inline-block;
   margin: 0 auto;
-  background-image: url(./assets/images/arrow.svg);
+  background-image: url(./assets/images/icons/icon-arrow.svg);
   width: 27px;
   height: 27px;
 }
@@ -360,86 +360,34 @@ body {
 }
 
 .icon--pen {
-  background-image: url(./assets/images/pen.svg);
+  background-image: url(./assets/images/icons/icon-pen.svg);
   background-size: 32px 32px;
 }
 
 .icon--bulb {
-  background-image: url(./assets/images/bulb.svg);
+  background-image: url(./assets/images/icons/icon-bulb.svg);
   background-size: 22px 32px;
 }
 
 .icon--heart {
-  background-image: url(./assets/images/heart.svg);
+  background-image: url(./assets/images/icons/icon-heart.svg);
   background-size: 32px 28px;
 }
 
 .icon--phone {
-  background-image: url(./assets/images/phone.svg);
+  background-image: url(./assets/images/icons/icon-phone-screen.svg);
   background-size: 22px 32px;
 }
 
 .icon--bubble {
-  background-image: url(./assets/images/bubble.svg);
+  background-image: url(./assets/images/icons/icon-bubble.svg);
   background-size: 32px 28px;
 }
 
 .icon--star {
-  background-image: url(./assets/images/star.svg);
+  background-image: url(./assets/images/icons/icon-star.svg);
   background-size: 32px 31px;
 }
-
-
-@media (max-width: 1020px) {
-
-  .image__phone-wrapper {
-    height: calc(100vw * 0.45);
-  }
-
-  .image__shadow {
-    width: calc(24vw);
-    height: calc(47.5vw);
-  }
-
-  .image__shadow--horizont {
-    transform: scale(1, -1) translate(0, 5.2%);
-  }
-
-  .image__screen {
-    top: 13%;
-    left: 4%;
-    transform: none;
-    width: calc(18.8vw);
-    height: calc(33.2vw);
-  }
-}
-
-@media (max-width: 700px) {
-
-  .slider {
-    padding: 10% 20px 0 20px;
-  }
-}
-
-@media (max-width: 600px) {
-
-  .navigation {
-    background-image: url(./assets/images/mobile-menu.svg);
-    background-position: right center;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-  }
-
-  .navigation__item {
-    display: none;
-  }
-
-  .image__screen {
-    border: 1px solid var(--color__image-border);
-  }
-}
-
 
 .portfolio {
   --color__portfolio-active: #dedede;
@@ -580,17 +528,13 @@ body {
   font-weight: 300;
   font-style: normal;
 }
+
 .about__persons-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-}
-@media (max-width: 450px) {
-  .about__persons-wrapper {
-    flex-direction: column;
-  }
 }
 
 
@@ -660,19 +604,19 @@ body {
 }
 
 .person__social-link--facebook {
-  background-image: url(./assets/images/facebook.svg);
+  background-image: url(./assets/images/icons/icon-facebook.svg);
 }
 
 .person__social-link--google {
-  background-image: url(./assets/images/google-plus.svg);
+  background-image: url(./assets/images/icons/icon-google-plus.svg);
 }
 
 .person__social-link--twitter {
-  background-image: url(./assets/images/twitter.svg);
+  background-image: url(./assets/images/icons/icon-twitter.svg);
 }
 
 .person__social-link--linkedin {
-  background-image: url(./assets/images/linkedin.svg);
+  background-image: url(./assets/images/icons/icon-linkedin.svg);
 }
 
 
@@ -827,16 +771,16 @@ body {
 }
 
 .get-quote__contact-line--address::before {
-  background-image: url("./assets/images/icon-location.png");
+  background-image: url("./assets/images/icons/icon-location.png");
 }
 
 .get-quote__contact-line--phone::before {
-  background-image: url("./assets/images/icon-phone.png");
+  background-image: url("./assets/images/icons/icon-phone.png");
 }
 
 .get-quote__contact-line--mail::before {
   transform: translateY(-44%);
-  background-image: url("./assets/images/icon-mail.png");
+  background-image: url("./assets/images/icons/icon-mail.png");
 }
 
 
@@ -887,17 +831,73 @@ body {
 }
 
 .footer__social-link--facebook {
-  background-image: url(./assets/images/facebook.svg);
+  background-image: url(./assets/images/icons/icon-facebook.svg);
 }
 
 .footer__social-link--google {
-  background-image: url(./assets/images/google-plus.svg);
+  background-image: url(./assets/images/icons/icon-google-plus.svg);
 }
 
 .footer__social-link--twitter {
-  background-image: url(./assets/images/twitter.svg);
+  background-image: url(./assets/images/icons/icon-twitter.svg);
 }
 
 .footer__social-link--linkedin {
-  background-image: url(./assets/images/linkedin.svg);
+  background-image: url(./assets/images/icons/icon-linkedin.svg);
+}
+
+@media (max-width: 1020px) {
+
+  .image__phone-wrapper {
+    height: calc(100vw * 0.45);
+  }
+
+  .image__shadow {
+    width: calc(24vw);
+    height: calc(47.5vw);
+  }
+
+  .image__shadow--horizont {
+    transform: scale(1, -1) translate(0, 5.2%);
+  }
+
+  .image__screen {
+    top: 13%;
+    left: 4%;
+    transform: none;
+    width: calc(18.8vw);
+    height: calc(33.2vw);
+  }
+}
+
+@media (max-width: 700px) {
+
+  .slider {
+    padding: 10% 20px 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navigation {
+    background-image: url(./assets/images/icons/icon-mobile-menu.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navigation__item {
+    display: none;
+  }
+
+  .image__screen {
+    border: 1px solid var(--color__image-border);
+  }
+}
+
+@media (max-width: 450px) {
+  .about__persons-wrapper {
+    flex-direction: column;
+  }
 }
