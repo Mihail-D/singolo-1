@@ -34,11 +34,13 @@
   </header>
 
   <!-- Main block -->
-  <main id="home" class="layout__main">
+  <main class="layout__main">
     <div class="layout__container">
 
+      <section id="scroll-point" class="scroll-point"></section>
+
       <!-- Slider section -->
-      <section class="slider">
+      <section id="home" class="slider">
         <h2 class="slider__title">Slider</h2>
         <button class="slider__button" value="left">
           <i class="slider__button-icon" style="width: 27px; height: 27px;"></i>
@@ -56,6 +58,30 @@
             </div>
             <div class="image__phone image__phone--horizont image__phone--blue">
               <div class="image__shadow image__shadow--horizont"></div>
+              <div class="image__phone-wrapper">
+                <img src="./assets/images/phone.png" alt="phone">
+                <div class="image__screen"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="image image--hidden">
+            <div class="image__phone image__phone--litle image__phone--vert image__phone--yellow">
+              <div class="image__shadow"></div>
+              <div class="image__phone-wrapper">
+                <img src="./assets/images/phone.png" alt="phone">
+                <div class="image__screen"></div>
+              </div>
+            </div>
+            <div class="image__phone image__phone--big image__phone--vert image__phone--green">
+              <div class="image__shadow"></div>
+              <div class="image__phone-wrapper">
+                <img src="./assets/images/phone.png" alt="phone">
+                <div class="image__screen"></div>
+              </div>
+            </div>
+            <div class="image__phone image__phone--litle image__phone--vert image__phone--yellow">
+              <div class="image__shadow"></div>
               <div class="image__phone-wrapper">
                 <img src="./assets/images/phone.png" alt="phone">
                 <div class="image__screen"></div>
@@ -219,6 +245,6 @@
     </div>
   </footer>
 
-  <script src="./assets/app.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

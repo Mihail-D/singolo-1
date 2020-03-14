@@ -68,28 +68,26 @@ const initiNavigateSet = () => {
 
 const startSlider = () => {
   const slider = document.querySelector('.slider'),
-        imageSection = slider.querySelectorAll('.image__phone'),
-        classColorScreen = ['image__phone--yellow', 'image__phone--blue'];
-  
-  const createNewPhons = () => {
-    [...imageSection].forEach(element => {
-      if (element.classList.contains('image__phone--blue')) {
-        element.classList.remove('image__phone--blue');
-        element.classList.add('image__phone--yellow');
-      } else {
-        element.classList.remove('image__phone--yellow');
-        element.classList.add('image__phone--blue');
-      }
-      
-    })
-  };
+        sliderScreensList = slider.querySelectorAll('.image');
   
   slider.addEventListener('click', (event) => {
-    const target = event.target.closest('.slider__button');
+    const target = event.target,
+          isSliderButton = target.closest('.slider__button'),
+          isScreen = target.closest('.image__screen');
 
-    if (target) {
-      createNewPhons();
+    if (isSliderButton) {
+      sliderScreensList.forEach(image => {
+        image.classList.toggle('image--hidden');
+      })
+
+      slider.classList.toggle('slider--blue');
     }
+
+    if (isScreen) {
+      const phone = target.closest('.image__phone');
+      phone.classList.toggle('image__phone--off');
+    }
+    
   });
 }
 
