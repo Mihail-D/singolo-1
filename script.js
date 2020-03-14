@@ -92,22 +92,50 @@ const startSlider = () => {
 }
 
 const initTagFilter = () => {
-  const tagsFromPortfolio = document.querySelectorAll('.portfolio__tag'),
-        tagsWrapper = document.querySelector('.portfolio__tags-wrapper');
+  const portfolio = document.getElementById('portfolio'),
+        tagsFromPortfolio = portfolio.querySelectorAll('.portfolio__tag'),
+        tagsWrapper = portfolio.querySelector('.portfolio__tags-wrapper'),
+        imagesWrapper = portfolio.querySelector('.portfolio__images-wrapper'),
+        imagesList = portfolio.querySelectorAll('.portfolio__image');
 
-  tagsWrapper.addEventListener('click', (event) => {
-    const target = event.target;
+  portfolio.addEventListener('click', event => {
+    const target = event.target,
+          isTargetTag = target.classList.contains('portfolio__tag'),
+          isTargetImage = target.classList.contains('portfolio__image');
 
-    if (target.classList.contains('portfolio__tag')) {
+
+    if (isTargetTag) {
       [...tagsFromPortfolio].forEach(element => {
         element.classList.remove('portfolio__tag--active');
       })
 
       target.classList.add('portfolio__tag--active');
+      const wrapperFragment = document.createDocumentFragment();
+
+      [...imagesList].forEach(image => {
+        if (image.dataset.genre === target.value) {
+          wrapperFragment.prepend(image);
+        } else {
+          wrapperFragment.append(image);
+        }
+      })
+
+      // tempArray.forEach(element => {
+      //   wrapperFragment.append(element);
+      // })
+
+      imagesWrapper.appendChild(wrapperFragment);
+    }
+
+    if (isTargetImage) {
+      [...imagesList].forEach(image => {
+        image.classList.remove('portfolio__image--active');
+      })
+
+      target.classList.add('portfolio__image--active');
     }
   })
 }
-
 
 
 const initSendForm = () => {
