@@ -3,9 +3,11 @@ const ready = (callback) => {
     else document.addEventListener("DOMContentLoaded", callback);
   }
 
-const intiNavigateSet = () => {
+const initiNavigateSet = () => {
   const header = document.querySelector('.header'),
-        navigationBlock = header.querySelector('.navigation')
+        homeSection = document.getElementById('home'), 
+        scrollPoint = document.getElementById('scroll-point'),
+        navigationBlock = header.querySelector('.navigation'),
         navigationItemsList = navigationBlock.querySelectorAll('.navigation__link');
 
   const clearActivity = () => {
@@ -15,18 +17,26 @@ const intiNavigateSet = () => {
   };
 
   const slowMotion = (section) => {
+    const docLength = 
+    section.before(scrollPoint);
+
     if (section) {
-        section.scrollIntoView({
+        scrollPoint.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         })
       }
+
+    homeSection.before(scrollPoint)
   }
   
   header.addEventListener('click', (event) => {
     const target = event.target;
 
-    if (target.classList.contains('navigation__link')) {
+    const isTargetLink = target.classList.contains('navigation__link'),
+          isTargetLogo = target.classList.contains('header__logo')
+
+    if (isTargetLink) {
       event.preventDefault();
       const blockId = target.getAttribute('href').substr(1)
 
@@ -38,7 +48,9 @@ const intiNavigateSet = () => {
       const targetSection = document.getElementById(blockId);
       slowMotion(targetSection);
       
-    } else if (target.classList.contains('header__logo')) {
+    }
+    
+    if (isTargetLogo) {
       event.preventDefault();
       const blockId = target.getAttribute('href').substr(1)
 
@@ -126,7 +138,7 @@ const initSendForm = () => {
 
 
 ready(() => { 
-  intiNavigateSet();
+  initiNavigateSet();
   startSlider();
   initTagFilter();
   initSendForm();
