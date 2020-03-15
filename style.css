@@ -187,9 +187,6 @@ body {
   --color__slider-background: #648BF0;
   --color__slider-border: #5e85F6;
 }
-.slider--blue .slider__button-icon {
-  background-image: url(./assets/images/icons/icon-arrow--blue.svg);
-}
 .slider--blue .image {
   width: 64%;
 }
