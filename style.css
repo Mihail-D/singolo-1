@@ -123,6 +123,16 @@ body {
   height: var(--size__header-height);
   width: 100%;
 }
+.scroll-point__title {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+}
 
 .slider {
   --color__slider-background: #f06c64;
