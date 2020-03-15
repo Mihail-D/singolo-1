@@ -225,7 +225,9 @@
             <div class="get-quote__input-wrapper">
               <input class="get-quote__input" type="text" name="subject" placeholder="Subject">
             </div>
-            <textarea class="get-quote__message" name="message" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            <div class="get-quote__message-wrapper">
+              <textarea class="get-quote__message" name="message" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            </div>
             <button class="get-quote__submit" type="submit">Submit</button>
           </form>
           <div class="get-quote__information-wrapper">
@@ -256,6 +258,19 @@
       </section>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__screen">
+      <header class="modal__header">
+        <h3 class="modal__title">Письмо отправлено</h3>
+        <p class="modal__subject">Тема</p>
+      </header>
+      <div class="modal__description"></div>
+      <div class="modal__control-wrapper">
+        <button type="button" class="modal__button-ok">Ok</button>
+      </div>
+    </div>
+  </div>
 
   <script src="./script.js"></script>
 </body>

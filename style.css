@@ -697,19 +697,46 @@ body {
   color: var(--color__get-qoute-placeholder);
 }
 
+.get-quote__message-wrapper {
+  height: 202px;
+  background-color: var(--color__get-qoute-form-background);
+  border-radius: 3px;
+}
+
 .get-quote__message {
   box-sizing: border-box;
   outline: none;
   border: none;
-  border-radius: 3px;
   background-color: var(--color__get-qoute-form-background);
   padding-top: 10px;
   padding-left: 15px;
   width: 619px;
-  height: 202px;
+  height: 137px;
   resize: none;
   color: var(--color__get-qoute-title-color);
   font-size: 12px;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+}
+.get-quote__message::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+  cursor: pointer;
+}
+.get-quote__message::-webkit-scrollbar-track {
+  background-color: #f48c8f;
+}
+.get-quote__message::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #f06c64;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.get-quote__message::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: #ea676b;
 }
 
 .get-quote__message::placeholder {
@@ -859,6 +886,70 @@ body {
 
 .footer__social-link--linkedin {
   background-image: url(./assets/images/icons/icon-linkedin.svg);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__screen {
+  margin: 10% auto;
+  box-sizing: border-box;
+  width: 550px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+.modal__header {
+  padding: 20px 20px 10px;
+}
+.modal__title {
+  margin: 0 auto 5px;
+  text-align: center;
+}
+.modal__subject {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.modal__description {
+  margin: 0;
+  padding: 15px 20px;
+  max-height: 300px;
+  min-height: 100px;
+  overflow-y: auto;
+  border-top: 1px solid #a7a7a75e;
+  border-bottom: 1px solid #a7a7a75e;
+}
+.modal__control-wrapper {
+  width: 150px;
+  height: 41px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.modal__button-ok {
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  background: none;
+  border: 1px solid #f06c64;
+}
+.modal__button-ok:hover {
+  border: 1px solid #f06c644f;
+}
+.modal--open {
+  display: block;
 }
 
 @-moz-document url-prefix() {

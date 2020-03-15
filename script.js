@@ -120,10 +120,6 @@ const initTagFilter = () => {
         }
       })
 
-      // tempArray.forEach(element => {
-      //   wrapperFragment.append(element);
-      // })
-
       imagesWrapper.appendChild(wrapperFragment);
     }
 
@@ -142,23 +138,34 @@ const initSendForm = () => {
   const formSingolo = document.querySelector('.get-quote__form');
   const sendForm = new FormData(formSingolo);
 
+  const okMessage = document.querySelector('.modal'),
+        messageTopic = okMessage.querySelector('.modal__subject'),
+        messageText = okMessage.querySelector('.modal__description'),
+        messageButton = okMessage.querySelector('.modal__button-ok');
+
+  this.modalClickEvent = event => {
+    const target = event.target,
+          isTargetModalOverlay = target.classList.contains('modal'),
+          isTargetButtonOk = target.classList.contains('modal__button-ok');
+
+    if (isTargetButtonOk || isTargetModalOverlay) {
+      okMessage.classList.remove('modal--open');
+      okMessage.removeEventListener('click', this.modalClickEvent);
+    }
+  }
+
   formSingolo.addEventListener('submit', (event) => {
     event.preventDefault();
-    const sendForm = new FormData(formSingolo);
 
-    console.log(sendForm);
+    const sendForm = new FormData(formSingolo),
+          subject = formSingolo.querySelector('input[name=subject]'),
+          message = formSingolo.querySelector('textarea[name=message]');
 
-    fetch('https://cors-anywhere.herokuapp.com/http://singolo.lokalin.ru/mail.php', {
-      method: 'POST',
-      headers: {
-    	  'Content-Type': 'multipart/form-data',
-      },
-      body: sendForm
-    })
-      .then(response => response.json())
-      .then(json => {
-        console.log(json);
-      })
+    messageTopic.innerText = subject.value === '' ? 'Без темы' : `Тема: ${subject.value}`;
+    messageText.innerText  = message.value;
+
+    okMessage.addEventListener('click', this.modalClickEvent);
+    okMessage.classList.add('modal--open');
   });
 }
 
