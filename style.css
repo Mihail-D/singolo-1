@@ -256,6 +256,7 @@ body {
   height: 112%;
 }
 .image__phone-wrapper {
+  user-select: none;
   position: relative;
 }
 .image__screen {
@@ -745,7 +746,7 @@ body {
 
 .get-quote__submit {
   position: absolute;
-  right: 10px;
+  right: 15px;
   bottom: 12px;
   outline: none;
   border: 1px solid var(--color__get-qoute-button);
