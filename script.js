@@ -73,7 +73,7 @@ const startSlider = () => {
   slider.addEventListener('click', (event) => {
     const target = event.target,
           isSliderButton = target.closest('.slider__button'),
-          isScreen = target.closest('.image__screen');
+          isScreen = target.closest('.image__phone-wrapper');
 
     if (isSliderButton) {
       sliderScreensList.forEach(image => {
@@ -162,7 +162,7 @@ const initSendForm = () => {
           message = formSingolo.querySelector('textarea[name=message]');
 
     messageTopic.innerText = subject.value === '' ? 'Без темы' : `Тема: ${subject.value}`;
-    messageText.innerText  = message.value;
+    messageText.innerText  = message.value === '' ? 'Без описания' : `Описание: ${message.value}`;
 
     okMessage.addEventListener('click', this.modalClickEvent);
     okMessage.classList.add('modal--open');
